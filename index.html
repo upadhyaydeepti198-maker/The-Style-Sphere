@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Style Sphere | Fashion Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="index.html">THE <span>STYLE</span> SPHERE</a>
+  <nav class="nav">
+    <a href="index.html">HOME</a>
+    <a href="products.html?category=Men">MEN</a>
+    <a href="products.html?category=Women">WOMEN</a>
+    <a href="products.html?category=Kids">KIDS</a>
+    <a href="products.html?category=Accessories">ACCESSORIES</a>
+  </nav>
+  <div class="header-actions">
+    <div class="search-box"><span>⌕</span><input id="globalSearch" placeholder="Search for products, brands and more"></div>
+    <a href="login.html" class="head-icon">♙<small>Profile</small></a>
+    <a href="wishlist.html" class="head-icon">♡<small>Wishlist <b id="wishCount">0</b></small></a>
+    <a href="cart.html" class="head-icon">🛍<small>Bag <b id="cartCount">0</b></small></a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">THE NEW SEASON EDIT</p>
+      <h1>Fashion that<br><span>feels like you.</span></h1>
+      <p>Discover everyday essentials, statement looks and fresh styles for every mood.</p>
+      <a href="products.html" class="btn btn-dark">SHOP NOW →</a>
+    </div>
+    <div class="hero-image"></div>
+  </section>
+
+  <section class="strip">
+    <div>⚡ <strong>100% ORIGINAL</strong><span> products</span></div>
+    <div>🚚 <strong>FREE SHIPPING</strong><span> above ₹999</span></div>
+    <div>↩ <strong>EASY RETURNS</strong><span> within 7 days</span></div>
+    <div>🔒 <strong>SECURE PAYMENT</strong><span> 100% protected</span></div>
+  </section>
+
+  <section class="section">
+    <div class="section-title"><div><p class="eyebrow">SHOP YOUR STYLE</p><h2>Categories</h2></div><a href="products.html">VIEW ALL →</a></div>
+    <div class="category-grid">
+      <a class="cat-card women" href="products.html?category=Women"><div><span>01</span><h3>WOMEN</h3><p>Dress • Tops • Ethnic • Shoes</p></div></a>
+      <a class="cat-card men" href="products.html?category=Men"><div><span>02</span><h3>MEN</h3><p>Shirts • Tees • Jeans • Shoes</p></div></a>
+      <a class="cat-card kids" href="products.html?category=Kids"><div><span>03</span><h3>KIDS</h3><p>Playwear • Sets • Sneakers</p></div></a>
+      <a class="cat-card accessories" href="products.html?category=Accessories"><div><span>04</span><h3>ACCESSORIES</h3><p>Bags • Watches • Jewellery</p></div></a>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="section-title"><div><p class="eyebrow">TRENDING NOW</p><h2>Fresh arrivals</h2></div><a href="products.html">EXPLORE ALL →</a></div>
+    <div id="homeProducts" class="product-grid"></div>
+  </section>
+
+  <section class="promo">
+    <div><p class="eyebrow">STYLE SALE</p><h2>UP TO 70% OFF</h2><p>Limited-time offers on your favourite looks.</p><a class="btn btn-light" href="products.html?sort=discount">SHOP OFFERS →</a></div>
+  </section>
+
+  <section class="section about">
+    <div><p class="eyebrow">ABOUT THE BRAND</p><h2>Built for your everyday style.</h2><p>The Style Sphere is a modern fashion shopping experience inspired by the convenience of India's leading fashion marketplaces. Browse, search, filter, wishlist, add to bag and complete a demo checkout—all from one responsive website.</p></div>
+    <div class="about-points"><div><b>01</b><span>Curated styles</span></div><div><b>02</b><span>Smart shopping</span></div><div><b>03</b><span>Easy checkout</span></div></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div><a class="logo light-logo" href="index.html">THE <span>STYLE</span> SPHERE</a><p>Fashion for every version of you.</p></div>
+  <div><h4>SHOP</h4><a href="products.html?category=Women">Women</a><a href="products.html?category=Men">Men</a><a href="products.html?category=Kids">Kids</a></div>
+  <div><h4>HELP</h4><a href="login.html">My Account</a><a href="cart.html">Bag</a><a href="wishlist.html">Wishlist</a></div>
+  <div><h4>CONTACT</h4><p>support@stylesphere.demo</p><p>+91 90000 00000</p></div>
+</footer>
+<div id="toast" class="toast"></div>
+<script src="products.js"></script><script src="app.js"></script>
+</body>
+</html>
